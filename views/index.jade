@@ -15,7 +15,7 @@ section#featured-services.featured-services.section-bg
               i.fas.fa-smog(style='font-size:24px; color:rgb(106, 106, 211)')
             p.card-text(style='color:black;') 12.00am - 5.59am
             p(style='color:black ;font-size:14px;')
-              | Average-#{data.title}&deg;C
+              | High-#{data.e}&deg;C   Low-#{data.f}&deg;C
             button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo1') Conver to F
         // </div>
       .col-lg-3.col-md-6
@@ -26,7 +26,7 @@ section#featured-services.featured-services.section-bg
               i.fas.fa-snowflake(style='font-size:24px; color:rgb(106, 106, 211)')
             p.card-text(style='color:black') 6.00am - 11.59am
             p.card-text(style='color:black; font-size:14px;')
-              | Average-#{data.name}&deg;C
+              | High-#{data.i}&deg;C   Low-#{data.j}&deg;C
             button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo2') Conver to F
         // </div>
       .col-lg-3.col-md-6
@@ -37,7 +37,7 @@ section#featured-services.featured-services.section-bg
               i.fas.fa-sun(style='font-size:24px; color:rgb(106, 106, 211)')
             p.card-text(style='color:black') 12.00pm - 5.59pm
             p.card-text(style='color:black; font-size:14px;')
-              | Average-#{data.x}&deg;C
+              | High-#{data.m}&deg;C   Low-#{data.n}&deg;C
             button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo3') Conver to F
         // </div>
       .col-lg-3.col-md-6
@@ -48,7 +48,7 @@ section#featured-services.featured-services.section-bg
               i.fas.fa-cloud-showers-heavy(style='font-size:24px; color:rgb(106, 106, 211)')
             p.card-text(style='color:black') 6.00pm - 11.59pm
             p.card-text(style='color:black; font-size:14px;')
-              | Average-#{data.y}&deg;C
+              | High-#{data.q}&deg;C   Low-#{data.r}&deg;C
             button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo4') Conver to F
         // </div>
     .row.no-gutters
@@ -58,25 +58,25 @@ section#featured-services.featured-services.section-bg
             .card-body
               h5.card-title Card title1
               p.card-text(style='color:black')
-                | Average-#{data.a}F
+                | High-#{data.g}F Low-#{data.h}F
       .col-lg-3.col-md-6
         #demo2.collapse
           .card(style='width: 18rem;')
             .card-body
               h5.card-title Card title2
               p.card-text(style='color:black')
-                | Average-#{data.b}F
+                | High-#{data.k}F Low-#{data.l}F
       .col-lg-3.col-md-6
         #demo3.collapse
           .card(style='width: 18rem;')
             .card-body
               h5.card-title Card title3
               p.card-text(style='color:black')
-                | Average-#{data.c}F
+                | High-#{data.o}F Low-#{data.p}F
       .col-lg-3.col-md-6
         #demo4.collapse
           .card(style='width: 18rem;')
             .card-body
               h5.card-title Card title4
               p.card-text(style='color:black')
-                | Average-#{data.d}F
+                | High-#{data.s}F Low-#{data.t}F
