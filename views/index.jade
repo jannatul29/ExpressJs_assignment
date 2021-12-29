@@ -1,17 +1,9 @@
-//- extends layout
-
-//- block content
-//-   h1= title
-//-   p Welcome to #{data.title}
-//-   p Welcome to #{data.name}
-//-   p Welcome to #{data. weather}
-
-
 head
   title express
   link(href='css/style.css' rel='stylesheet')
   link(href='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css' rel='stylesheet')
   script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js')
+  link(rel='stylesheet' href='https://pro.fontawesome.com/releases/v5.10.0/css/all.css' integrity='sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p' crossorigin='anonymous')
 section#featured-services.featured-services.section-bg
   .container
     .row.no-gutters
@@ -19,37 +11,45 @@ section#featured-services.featured-services.section-bg
         // <div class="icon-box" style="background-image: url(image/7.jpg); border-radius: 5px;">
         .card(style='width: 18rem;')
           .card-body
-            h5.card-title Card title
-            p.card-text(style='color:black')
-              | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
-            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo1') Simple collapsible
+            h5.card-title
+              i.fas.fa-smog(style='font-size:24px; color:rgb(106, 106, 211)')
+            p.card-text(style='color:black;') 12.00am - 5.59am
+            p(style='color:black ;font-size:14px;')
+              | Average-#{data.title}&deg;C
+            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo1') Conver to F
         // </div>
       .col-lg-3.col-md-6
         // <div class="icon-box" style="background-image: url(image/7.jpg); border-radius: 5px;">
         .card(style='width: 18rem;')
           .card-body
-            h5.card-title Card title
-            p.card-text(style='color:black')
-              | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
-            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo2') Simple collapsible
+            h5.card-title
+              i.fas.fa-snowflake(style='font-size:24px; color:rgb(106, 106, 211)')
+            p.card-text(style='color:black') 6.00am - 11.59am
+            p.card-text(style='color:black; font-size:14px;')
+              | Average-#{data.name}&deg;C
+            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo2') Conver to F
         // </div>
       .col-lg-3.col-md-6
         // <div class="icon-box" style="background-image: url(image/7.jpg); border-radius: 5px;">
         .card(style='width: 18rem;')
           .card-body
-            h5.card-title Card title
-            p.card-text(style='color:black')
-              | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
-            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo3') Simple collapsible
+            h5.card-title
+              i.fas.fa-sun(style='font-size:24px; color:rgb(106, 106, 211)')
+            p.card-text(style='color:black') 12.00pm - 5.59pm
+            p.card-text(style='color:black; font-size:14px;')
+              | Average-#{data.x}&deg;C
+            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo3') Conver to F
         // </div>
       .col-lg-3.col-md-6
         // <div class="icon-box" style="background-image: url(image/7.jpg); border-radius: 5px;">
         .card(style='width: 18rem;')
           .card-body
-            h5.card-title Card title
-            p.card-text(style='color:black')
-              | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
-            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo4') Simple collapsible
+            h5.card-title
+              i.fas.fa-cloud-showers-heavy(style='font-size:24px; color:rgb(106, 106, 211)')
+            p.card-text(style='color:black') 6.00pm - 11.59pm
+            p.card-text(style='color:black; font-size:14px;')
+              | Average-#{data.y}&deg;C
+            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo4') Conver to F
         // </div>
     .row.no-gutters
       .col-lg-3.col-md-6
@@ -58,26 +58,25 @@ section#featured-services.featured-services.section-bg
             .card-body
               h5.card-title Card title1
               p.card-text(style='color:black')
-                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                | Average-#{data.a}F
       .col-lg-3.col-md-6
         #demo2.collapse
           .card(style='width: 18rem;')
             .card-body
               h5.card-title Card title2
               p.card-text(style='color:black')
-                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                | Average-#{data.b}F
       .col-lg-3.col-md-6
         #demo3.collapse
           .card(style='width: 18rem;')
             .card-body
               h5.card-title Card title3
               p.card-text(style='color:black')
-                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
+                | Average-#{data.c}F
       .col-lg-3.col-md-6
         #demo4.collapse
           .card(style='width: 18rem;')
             .card-body
               h5.card-title Card title4
               p.card-text(style='color:black')
-                | Some quick example text to build on the card title and make up the bulk of the card&apos;s content.
-
+                | Average-#{data.d}F
