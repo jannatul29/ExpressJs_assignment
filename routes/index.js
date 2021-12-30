@@ -18,7 +18,7 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
   var country = req.params.country;
   var city = req.params.city;
   var date = req.params.date;
-  if(student.location.name==city && student.location.country==country && student.forecast.forecastday[0].date==date){
+  if(rawdata.length==0 && student.location.name==city && student.location.country==country && student.forecast.forecastday[0].date==date){
 
     var forecast = student.forecast.forecastday;
       //console.log(forecast);
