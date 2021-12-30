@@ -1,3 +1,4 @@
+
 head
   title express
   link(rel='stylesheet', href='/stylesheets/style.css')
@@ -7,16 +8,25 @@ head
 section#featured-services.featured-services.section-bg
   .container
     .row.no-gutters
+      .col-lg-6.col-md-6
+        h5(style='color: rgb(106, 106, 211)') Weather in Dhaka, Bangladesh
+    .row.no-gutters
       .col-lg-3.col-md-6
         // <div class="icon-box" style="background-image: url(image/7.jpg); border-radius: 5px;">
         .card(style='width: 18rem;')
           .card-body
             h5.card-title
               i.fas.fa-smog(style='font-size:24px; color:rgb(106, 106, 211)')
+              span(style='padding: 0px 150px 0px 0px')
+              //| #{data.o}
             p.card-text(style='color:black;') 12.00am - 5.59am
-            p(style='color:black ;font-size:14px;')
-              | High-#{data.e}&deg;C   Low-#{data.f}&deg;C
-            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo1') Conver to F
+            .row
+              .col-lg-6.col-md-6
+                p#max1_c(style='color:black ;font-size:14px;') High-#{data.e}&deg;C 
+              .col-lg-6.col-md-6
+                p#min1_c(style='color:black ;font-size:14px;') Low-#{data.f}&deg;C
+            // <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#demo1">Conver to F</button>
+            button.btn.btn-primary(type='button' onclick='myFunction1()') Convert to F
         // </div>
       .col-lg-3.col-md-6
         // <div class="icon-box" style="background-image: url(image/7.jpg); border-radius: 5px;">
@@ -24,10 +34,15 @@ section#featured-services.featured-services.section-bg
           .card-body
             h5.card-title
               i.fas.fa-snowflake(style='font-size:24px; color:rgb(106, 106, 211)')
+              span(style='padding: 0px 150px 0px 0px')
+              //| Dhaka
             p.card-text(style='color:black') 6.00am - 11.59am
-            p.card-text(style='color:black; font-size:14px;')
-              | High-#{data.i}&deg;C   Low-#{data.j}&deg;C
-            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo2') Conver to F
+            .row
+              .col-lg-6.col-md-6
+                p#max2_c(style='color:black ;font-size:14px;') High-#{data.i}&deg;C
+              .col-lg-6.col-md-6
+                p#min2_c(style='color:black ;font-size:14px;') Low-#{data.j}&deg;C
+            button.btn.btn-primary(type='button' onclick='myFunction2()') Convert to F
         // </div>
       .col-lg-3.col-md-6
         // <div class="icon-box" style="background-image: url(image/7.jpg); border-radius: 5px;">
@@ -35,10 +50,15 @@ section#featured-services.featured-services.section-bg
           .card-body
             h5.card-title
               i.fas.fa-sun(style='font-size:24px; color:rgb(106, 106, 211)')
+              span(style='padding: 0px 150px 0px 0px')
+              //| Dhaka
             p.card-text(style='color:black') 12.00pm - 5.59pm
-            p.card-text(style='color:black; font-size:14px;')
-              | High-#{data.m}&deg;C   Low-#{data.n}&deg;C
-            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo3') Conver to F
+            .row
+              .col-lg-6.col-md-6
+                p#max3_c(style='color:black ;font-size:14px;') High-#{data.m} &deg;C
+              .col-lg-6.col-md-6
+                p#min3_c(style='color:black ;font-size:14px;') Low-#{data.n}&deg;C
+            button.btn.btn-primary(type='button' onclick='myFunction3()') Convert to F
         // </div>
       .col-lg-3.col-md-6
         // <div class="icon-box" style="background-image: url(image/7.jpg); border-radius: 5px;">
@@ -46,37 +66,14 @@ section#featured-services.featured-services.section-bg
           .card-body
             h5.card-title
               i.fas.fa-cloud-showers-heavy(style='font-size:24px; color:rgb(106, 106, 211)')
+              span(style='padding: 0px 150px 0px 0px')
+              //| Dhaka
             p.card-text(style='color:black') 6.00pm - 11.59pm
-            p.card-text(style='color:black; font-size:14px;')
-              | High-#{data.q}&deg;C   Low-#{data.r}&deg;C
-            button.btn.btn-primary(type='button' data-bs-toggle='collapse' data-bs-target='#demo4') Conver to F
+            .row
+              .col-lg-6.col-md-6
+                p#max4_c(style='color:black ;font-size:14px;') High-#{data.q}&deg;C
+              .col-lg-6.col-md-6
+                p#min4_c(style='color:black ;font-size:14px;') Low-#{data.r}&deg;C
+            button.btn.btn-primary(type='button' onclick='myFunction4()') Convert to F
         // </div>
-    .row.no-gutters
-      .col-lg-3.col-md-6
-        #demo1.collapse
-          .card(style='width: 18rem;')
-            .card-body
-              // h5.card-title Card title1
-              p.card-text(style='color:black')
-                | High-#{data.g}F Low-#{data.h}F
-      .col-lg-3.col-md-6
-        #demo2.collapse
-          .card(style='width: 18rem;')
-            .card-body
-              // h5.card-title Card title2
-              p.card-text(style='color:black')
-                | High-#{data.k}F Low-#{data.l}F
-      .col-lg-3.col-md-6
-        #demo3.collapse
-          .card(style='width: 18rem;')
-            .card-body
-              // h5.card-title Card title3
-              p.card-text(style='color:black')
-                | High-#{data.o}F Low-#{data.p}F
-      .col-lg-3.col-md-6
-        #demo4.collapse
-          .card(style='width: 18rem;')
-            .card-body
-              // h5.card-title Card title4
-              p.card-text(style='color:black')
-                | High-#{data.s}F Low-#{data.t}F
+script(src='/javascripts/script.js')
