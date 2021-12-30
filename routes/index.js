@@ -4,17 +4,14 @@ var axios = require("axios").default;
 var app = express();
 
 const rateLimit = require('express-rate-limit');
+const fs = require("fs");
+const path = require('path');
 
-// const rateLimit = require('express-rate-limit')
-// const createAccountLimiter = rateLimit({
-// 	windowMs: 60 * 1000, // 1 hour
-// 	max: 1, // Limit each IP to 5 create account requests per `window` (here, per hour)
-// 	message:
-// 		'Too many accounts created from this IP, please try again after an hour',
-// 	standardHeaders: true, // Return rate limit info in the `RateLimit-*` headers
-// 	legacyHeaders: false, // Disable the `X-RateLimit-*` headers
-// })
+let rawdata = fs.readFileSync(path.resolve(__dirname, '../data.json'));
+let student = JSON.parse(rawdata);
+console.log(student);
 
+// fs.writeFileSync(path.resolve(__dirname, '../write.json'), JSON.stringify(student));
 
 router.get("/all/:country/:city/:date", function (req, res, next) {
   var country = req.params.country;
@@ -34,14 +31,17 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
       var jsonObject = JSON.stringify(response.data);
       // console.log(jsonObject);
       var object = JSON.parse(jsonObject);
+      fs.writeFileSync(path.resolve(__dirname, '../write.json'), JSON.stringify(response.data));
+
+
 
       // console.log(object);
 
-      var location = object.location;
-      console.log(location);
+      // var location = object.location;
+      // console.log(location);
 
       var forecast = object.forecast.forecastday;
-      console.log(forecast);
+      //console.log(forecast);
       // var sum1=0;
       // var sum2=0;
       // var sum3=0;
@@ -70,7 +70,7 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
       var max4_f=forecast[0].hour[18].temp_f;
       var min4_f=forecast[0].hour[18].temp_f;
       for(var i =0; i<24; i++) {
-        console.log(forecast[0].hour[i].temp_c);
+        //console.log(forecast[0].hour[i].temp_c);
         //sum= sum+forecast[0].hour[i].temp_c;
         if(i>=0 && i<5){
           // sum1= sum1+forecast[0].hour[i].temp_c;
