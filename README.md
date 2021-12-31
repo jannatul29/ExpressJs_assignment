@@ -1,6 +1,6 @@
-#ExpressJS Assignment
+# ExpressJS Assignment
 
-## Using tools and lenguage:
+### Using tools and lenguage:
 1. Html5
 2. CSS
 3. Bootstrap
