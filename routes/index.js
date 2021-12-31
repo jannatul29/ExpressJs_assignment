@@ -119,9 +119,10 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
           }
         }
       }
-      
-    
-      res.render("index", {data:{ e: max1, f: min1, g: max1_f, h: min1_f, i: max2, j: min2, k: max2_f, l: min2_f, m: max3, n: min3, o: max3_f, p: min3_f, q: max4, r: min4, s: max4_f, t: min4_f }});
+      console.log(student.location.country)
+      console.log(student.location.name)
+      res.render("index", {data:{ e: max1, f: min1, g: max1_f, h: min1_f, i: max2, j: min2, k: max2_f, l: min2_f, m: max3, n: min3, o: max3_f, p: min3_f, q: max4, r: min4, s: max4_f, t: min4_f, w: student.location.name, z: student.location.country }});
+      //res.render("index", {data:{ e: max1, f: min1, g: max1_f, h: min1_f, i: max2, j: min2, k: max2_f, l: min2_f, m: max3, n: min3, o: max3_f, p: min3_f, q: max4, r: min4, s: max4_f, t: min4_f }});
       //res.render("index", {data:{ e: max1, f: min1, i: max2, j: min2, m: max3, n: min3, q: max4, r: min4, o: student.location.name }});
 
   }
@@ -251,9 +252,11 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
       }
       
       //res.render("index", {data:{ title: avg1, name: avg2,x: avg3,y: avg4, a: avg1_f, b: avg2_f, c: avg3_f, d: avg4_f}});
-      res.render("index", {data:{ e: max1, f: min1, g: max1_f, h: min1_f, i: max2, j: min2, k: max2_f, l: min2_f, m: max3, n: min3, o: max3_f, p: min3_f, q: max4, r: min4, s: max4_f, t: min4_f }});
+      //res.render("index", {data:{ e: max1, f: min1, g: max1_f, h: min1_f, i: max2, j: min2, k: max2_f, l: min2_f, m: max3, n: min3, o: max3_f, p: min3_f, q: max4, r: min4, s: max4_f, t: min4_f }});
       //res.render("index", {data:{ e: max1, f: min1, i: max2, j: min2, m: max3, n: min3, q: max4, r: min4, o: object.location.name }});
-      
+      res.render("index", {data:{ e: max1, f: min1, g: max1_f, h: min1_f, i: max2, j: min2, k: max2_f, l: min2_f, m: max3, n: min3, o: max3_f, p: min3_f, q: max4, r: min4, s: max4_f, t: min4_f, w: object.location.name, z: student.location.country }});
+      console.log(object.location.country)
+      console.log(object.location.name)
     })
     .catch((error) => {
       console.log(error);
