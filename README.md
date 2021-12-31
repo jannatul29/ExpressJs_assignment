@@ -11,8 +11,9 @@
 ### Used Api: https://api.weatherapi.com/
 
 ### After cloning this assignment please the steps:
-1. Searching URL(e.g.): http://localhost:3000/all/Bangladesh/Dhaka/2021-12-25
-2. 
+1. npm init 
+2. npm run start
+3. Searching URL(e.g.): http://localhost:3000/all/Bangladesh/Dhaka/2021-12-25
 
 ## Assignment Details
 ### It shows weather changing in whole days in different time spam
