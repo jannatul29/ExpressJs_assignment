@@ -29,7 +29,8 @@
 2. If pug's file indentation was not correct, then gives error. But we know that, if html file give not error for indentation.
 
 ## Existing error
-If anyone search incorrect location, it gives incorrect location and search correct location, it gives correct output (shown in 5,6,7 no. screenshots). Somethimes it is not working (shown in screenshots 8). I use this logic:
+If anyone search incorrect location, it gives incorrect location and search correct location, it gives correct output (shown in 5,6,7 no. screenshots). Somethimes it is not working (shown in screenshots 8). 
+##### I use this logic:
 - if( object.location.name == req.params.city ){
       .
       .
