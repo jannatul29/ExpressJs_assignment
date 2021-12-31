@@ -11,8 +11,8 @@
 ### Used Api: https://api.weatherapi.com/
 
 ### After cloning this assignment please the steps:
-1. npm init 
-2. npm run start
+1. npm init (execute for npm install)
+2. npm run start (npm run for server run)
 3. Searching URL(e.g.): http://localhost:3000/all/Bangladesh/Dhaka/2021-12-25
 
 ## Assignment Details
