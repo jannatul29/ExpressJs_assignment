@@ -30,7 +30,7 @@
 
 ## Existing error
 If anyone search incorrect location, it gives incorrect location and search correct location, it gives correct output (shown in 5,6,7 no. screenshots). Somethimes it is not working (shown in screenshots 8). I use this logic:
-if( object.location.name == req.params.city ){
+- if( object.location.name == req.params.city ){
       .
       .
       .
