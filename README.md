@@ -1,12 +1,14 @@
 # ExpressJS Assignment
 
-### Using tools and lenguage:
+### Using tools/lenguage:
 1. Html5
 2. CSS
 3. Bootstrap
 4. Javascript
 5. NodeJS
 6. ExpressJS
+
+### Used Api: https://api.weatherapi.com/
 
 ### It shows weather changing in whole days in different time spam
 ##### Screenshot No.: 01
