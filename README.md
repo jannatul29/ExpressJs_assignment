@@ -9,16 +9,16 @@
 6. ExpressJS
 
 # It shows weather changing in whole days in different time spam
-![1st](https://user-images.githubusercontent.com/69507020/147804538-228bd293-2454-4726-b16f-2ed4e6d94ae9.png)
+![1st](https://user-images.githubusercontent.com/69507020/147814479-cf018ea3-cdfc-445f-bb61-fff06729cb87.png)
 
 ### After clicking toggle button weather change in Celsius to Fahrenheit
-![2nd](https://user-images.githubusercontent.com/69507020/147804543-66f6401b-506f-4690-bdb0-2e7503005037.png)
+![2nd](https://user-images.githubusercontent.com/69507020/147814480-f702a1ca-5f6c-4a26-8235-1c4e30240d33.png)
 
 ### if anyone hit URL more than one between 1 to 10 seconds, display 403 HTTP Forbidden server responses
 ![3rd](https://user-images.githubusercontent.com/69507020/147804544-7aee7368-f083-4fc7-992a-0d24574879a0.png)
 
 ### Responsive Web-Application
-![4th](https://user-images.githubusercontent.com/69507020/147804546-dd41aeae-cf2a-4303-95de-f571631d3956.png)
+![4th](https://user-images.githubusercontent.com/69507020/147814485-d22bd050-9e6c-45a0-8761-f0a37746d51e.png)
 
 ## Existing error
 If anyone search incorrect location. It gives the weather changing beacuse Api's response was not null for incorrect location. 
