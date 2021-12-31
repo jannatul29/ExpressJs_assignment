@@ -24,5 +24,5 @@
 If anyone search incorrect location. It gives the weather changing beacuse Api's response was not null for incorrect location. 
 
 ## Solving error
-1. If node JS version is less than 14, "express-rate-limit" library is not working. If this(npm audit fix --force) command was not executed after installing this libray, this libray also gives error.
+1. If node JS version is less than 14, "express-rate-limit" library is not working and, if this(npm audit fix --force) command was not executed after installing this libray, this libray also gives error.
 2. If pug's file indentention was not correct, then gives error. But we know that, if html file give not error for indentention.
