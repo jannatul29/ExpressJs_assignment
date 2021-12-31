@@ -19,6 +19,11 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
   var city = req.params.city;
   var date = req.params.date;
   if(rawdata.length==0 && student.location.name==city && student.location.country==country && student.forecast.forecastday[0].date==date){
+    if( student.location.name != city ){
+      //|| student.location.country== country
+      res.send("Location is incorrect");
+    }
+    else{
 
     var forecast = student.forecast.forecastday;
       //console.log(forecast);
@@ -124,7 +129,7 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
       res.render("index", {data:{ e: max1, f: min1, g: max1_f, h: min1_f, i: max2, j: min2, k: max2_f, l: min2_f, m: max3, n: min3, o: max3_f, p: min3_f, q: max4, r: min4, s: max4_f, t: min4_f, w: student.location.name, z: student.location.country }});
       //res.render("index", {data:{ e: max1, f: min1, g: max1_f, h: min1_f, i: max2, j: min2, k: max2_f, l: min2_f, m: max3, n: min3, o: max3_f, p: min3_f, q: max4, r: min4, s: max4_f, t: min4_f }});
       //res.render("index", {data:{ e: max1, f: min1, i: max2, j: min2, m: max3, n: min3, q: max4, r: min4, o: student.location.name }});
-
+    }
   }
   else{
 
@@ -142,6 +147,12 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
       var jsonObject = JSON.stringify(response.data);
       // console.log(jsonObject);
       var object = JSON.parse(jsonObject);
+
+      if( object.location.name != city ){
+        //|| object.location.country== country
+        res.send("Location is incorrect");
+      }
+      else{
       fs.writeFileSync(path.resolve(__dirname, '../write.json'), JSON.stringify(response.data));
 
 
@@ -257,6 +268,7 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
       res.render("index", {data:{ e: max1, f: min1, g: max1_f, h: min1_f, i: max2, j: min2, k: max2_f, l: min2_f, m: max3, n: min3, o: max3_f, p: min3_f, q: max4, r: min4, s: max4_f, t: min4_f, w: object.location.name, z: student.location.country }});
       console.log(object.location.country)
       console.log(object.location.name)
+        }
     })
     .catch((error) => {
       console.log(error);
