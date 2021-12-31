@@ -10,13 +10,13 @@
 
 ### Javascript Assignment
 # It shown weather changes in whole days in different time spam
-![1st](https://user-images.githubusercontent.com/69507020/147801996-a25010c5-f3c0-485f-89dc-9bdbec4b6494.png)
+![1st](https://user-images.githubusercontent.com/69507020/147804538-228bd293-2454-4726-b16f-2ed4e6d94ae9.png)
 
 ### After clicking toggle button weather change in Celsius to Fahrenheit
-![2nd](https://user-images.githubusercontent.com/69507020/147802004-d10207a7-db4e-434c-8d5d-922075bd76fc.png)
+![2nd](https://user-images.githubusercontent.com/69507020/147804543-66f6401b-506f-4690-bdb0-2e7503005037.png)
 
 ### if anyone hit URL more than one between 1 to 10 seconds, display 403 HTTP Forbidden server responses
-![3](https://user-images.githubusercontent.com/69507020/147802008-c156eff4-5aa5-4e33-9e81-d1a3fc92c002.png)
+![3rd](https://user-images.githubusercontent.com/69507020/147804544-7aee7368-f083-4fc7-992a-0d24574879a0.png)
 
 ### Responsive Web-Application
-![4](https://user-images.githubusercontent.com/69507020/147802011-377f8f49-e630-4f8c-80f5-89f3cd7079bc.png)
+![4th](https://user-images.githubusercontent.com/69507020/147804546-dd41aeae-cf2a-4303-95de-f571631d3956.png)
