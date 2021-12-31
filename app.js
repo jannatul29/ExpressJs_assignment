@@ -14,15 +14,15 @@ const rateLimit = require("express-rate-limit");
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
-const limitReached = (req, res)=> {
-  //res.render("index", {title:"Forbidden 403"});
-  res.send('Too many request from this IP');
-  }
+// const limitReached = (req, res)=> {
+//   //res.render("index", {title:"Forbidden 403"});
+//   res.send('Too many request from this IP');
+//   }
 
 const limiter = rateLimit({
   windowMs: 10000,
   max: 2,
-  message: "Too many request from this IP",
+  message: "403 HTTP Forbidden",
   resetTime: 10000,
   //handler: limitReached,
   });
