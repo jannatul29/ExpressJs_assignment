@@ -8,8 +8,7 @@
 5. NodeJS
 6. ExpressJS
 
-### Javascript Assignment
-# It shown weather changes in whole days in different time spam
+# It shows weather changing in whole days in different time spam
 ![1st](https://user-images.githubusercontent.com/69507020/147804538-228bd293-2454-4726-b16f-2ed4e6d94ae9.png)
 
 ### After clicking toggle button weather change in Celsius to Fahrenheit
@@ -20,3 +19,10 @@
 
 ### Responsive Web-Application
 ![4th](https://user-images.githubusercontent.com/69507020/147804546-dd41aeae-cf2a-4303-95de-f571631d3956.png)
+
+## Existing error
+If anyone search incorrect location. It gives the weather changing beacuse api response was not null for incorrect location. 
+
+## Solving error
+1. If node JS version is less than 14, "express-rate-limit" library is not working. If this command was not executed after installing this libray, this libray also gives error.
+2. If pug's file indentention was not correct, then gives error. But we know that, if html file give not error for indentention.
