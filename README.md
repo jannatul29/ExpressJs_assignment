@@ -10,6 +10,10 @@
 
 ### Used Api: https://api.weatherapi.com/
 
+### After cloning this assignment please the steps:
+Run URL: http://localhost:3000/all/Bangladesh/Dhaka/2021-12-25
+
+## Assignment Details
 ### It shows weather changing in whole days in different time spam
 ##### Screenshot No.: 01
 ![1st](https://user-images.githubusercontent.com/69507020/147814479-cf018ea3-cdfc-445f-bb61-fff06729cb87.png)
