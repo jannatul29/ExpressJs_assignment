@@ -142,7 +142,7 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
       // console.log(jsonObject);
       var object = JSON.parse(jsonObject);
 
-      //if( object.location.name == city ){
+      if( object.location.name == req.params.city ){
       fs.writeFileSync(path.resolve(__dirname, '../write.json'), JSON.stringify(response.data));
 
 
@@ -258,9 +258,9 @@ router.get("/all/:country/:city/:date", function (req, res, next) {
       res.render("index", {data:{ e: max1, f: min1, g: max1_f, h: min1_f, i: max2, j: min2, k: max2_f, l: min2_f, m: max3, n: min3, o: max3_f, p: min3_f, q: max4, r: min4, s: max4_f, t: min4_f, w: object.location.name, z: student.location.country }});
       console.log(object.location.country)
       console.log(object.location.name)
-      //   }  
-      // else{
-      //   res.send("Location is incorrect");}
+        }  
+      else{
+        res.send("Location is incorrect");}
 
     })
     .catch((error) => {
