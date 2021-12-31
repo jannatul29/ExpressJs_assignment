@@ -25,4 +25,4 @@
 2. If pug's file indentation was not correct, then gives error. But we know that, if html file give not error for indentation.
 
 ## Existing error
-If anyone search incorrect location, it gives the weather changing beacuse Api's response was not null for incorrect location. 
+If anyone search incorrect location, it gives incorrect location. But somethimes it is not working.
